@@ -1,0 +1,22 @@
+#pp-canvas {
+  border: 2px solid black;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#color-palette {
+  border: 2px solid blue;
+}
+
+.pixel {
+  height: 10px;
+  width: 10px;
+  background: red;
+  border: 1px solid white;
+  float: left;
+}
+
