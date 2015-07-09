@@ -33,3 +33,15 @@ An example of the configuration object may look like:
   colorSwatch: ["#000000", "#0000FF", "#00FFFF", "#FFFFFF"]
 }
 ```
+
+# Pixel Painter Schema + Migrations
+
+Using your existing Pixel Painter project, we're going to upgrade it to use Express (if it isn't already).
+
+In addition, intialize the project with `sequelize`, to create the folders: `config`, `migrations`, and `models`.
+
+Now that we know a little bit about creating migrations, let's use Sequelize to create a couple migration files.
+
+  1. Using `sequelize model:create` to create model and migration files for a `Drawing` table.
+  2. The only requirement for the `Drawing` table is that it must have a `data` column, with the data type `json`.
+  3. After creating your migration files, create a `seed` folder and create a script to add atleast one drawing to your database! (remember to run migrations) before you seed your database.
